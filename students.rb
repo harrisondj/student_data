@@ -25,7 +25,7 @@ def brown_eyes(eye_colors)
 			brown += 1		
 		end
 	end
-	return "#{brown} pairs of brown eyes"	
+	return brown	
 end
 
 puts brown_eyes(eye_colors), "\n"
