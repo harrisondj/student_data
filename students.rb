@@ -96,7 +96,7 @@ end
 
 puts most_vowles(students, ages, sophomores), "has the most vowels in their name", "\n"
 
-#average age for green eyed students
+#4 average age for green eyed students
 def green_eye_ages(ages, eye_colors)
 	with_green_eyes = 0
 	st_age = 0
