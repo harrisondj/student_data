@@ -94,4 +94,20 @@ def most_vowles(students, ages, sophomores)
 	return with_most_vowels
 end
 
-puts most_vowles(students, ages, sophomores)
+puts most_vowles(students, ages, sophomores), "has the most vowels in their name", "\n"
+
+#average age for green eyed students
+def green_eye_ages(ages, eye_colors)
+	with_green_eyes = 0
+	st_age = 0
+	eye_colors.each_with_index do |eye, i|
+		if eye == 'Green'
+			with_green_eyes += 1
+			st_age += ages[i]
+		end
+	end
+	average_green_age = st_age / with_green_eyes
+	return average_green_age
+end
+
+puts green_eye_ages(ages, eye_colors), "is the average age for the green eyed students", "\n"
